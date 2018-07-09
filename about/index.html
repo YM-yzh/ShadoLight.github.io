@@ -110,7 +110,7 @@
 <meta name="description" content="某天, 博主突发奇想: 做一个自己的博客吧!为什么呢? 这种既好玩又能装X的事情, 何乐而不为呢?于是就有了我的博客… 『ღ( ´･ᴗ･` )笔芯』">
 <meta property="og:type" content="website">
 <meta property="og:title" content="about">
-<meta property="og:url" content="https://ym-yzh.github.io/about/index.html">
+<meta property="og:url" content="https://y_m.coding.me/about/index.html">
 <meta property="og:site_name" content="Ender">
 <meta property="og:description" content="某天, 博主突发奇想: 做一个自己的博客吧!为什么呢? 这种既好玩又能装X的事情, 何乐而不为呢?于是就有了我的博客… 『ღ( ´･ᴗ･` )笔芯』">
 <meta property="og:locale" content="zh-Hans">
@@ -127,7 +127,7 @@
     root: '/',
     scheme: 'Gemini',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"hide","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -147,7 +147,7 @@
 
 
 
-  <link rel="canonical" href="https://ym-yzh.github.io/about/"/>
+  <link rel="canonical" href="https://y_m.coding.me/about/"/>
 
 
 
@@ -295,6 +295,9 @@ function run(names){
           
 
   
+    <div class="comments" id="comments">
+    </div>
+  
 
 
 
@@ -423,10 +426,6 @@ function run(names){
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="http://cxjyxx.me/" title="cxjyxx" target="_blank">cxjyxx</a>
-                  </li>
-                
-                  <li class="links-of-blogroll-item">
                     <a href="https://blog.lwl12.com/" title="liwanglin12" target="_blank">liwanglin12</a>
                   </li>
                 
@@ -470,6 +469,13 @@ function run(names){
       
 
       
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
 
     </div>
   </aside>
@@ -488,12 +494,27 @@ function run(names){
   <span class="author" itemprop="copyrightHolder">筱影志</span>
 
   
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">14.5k</span>
+  
 </div>
 
 
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
 
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a></div>
 
 
 
@@ -510,11 +531,6 @@ function run(names){
       </div>
     </footer>
 
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
     
 
     
@@ -644,6 +660,28 @@ function run(names){
 
 
 
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: true,
+        notify: true,
+        appId: 'yo4W93e46jrD0RffKIr6z7XP-gzGzoHsz',
+        appKey: 'f4C7IgRIlURvH1zT5WhguetC',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
 
 
   
@@ -769,6 +807,8 @@ function run(names){
   
 
   
+  
+
 
   
 
