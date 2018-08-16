@@ -2,26 +2,38 @@
 
 
 
+
+
+
+
+
+
+
+
+
   
 
 
-<html class="theme-next gemini use-motion" lang="zh-Hans">
+<html class="theme-next gemini use-motion" lang="zh-CN">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
 <meta name="theme-color" content="#222">
 
 <script>
 	(function(){
 		if(''){
 			if (prompt('请输入文章密码','') !== ''){
-				alert('密码错误！请去问博主大大～');
+				alert('密码错误！快去问博主大大～');
 				history.back();
 			}
 		}
 	})();
 </script>
+
+
+
 
 
 
@@ -52,36 +64,6 @@
 
 
 
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
 
 
 
@@ -90,47 +72,25 @@
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.3.0">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.ico?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.ico?v=6.3.0">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.ico?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.ico?v=6.3.0">
 
 
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="Use the code to terminate the world." />
-
-
-
-
-
-  <link rel="alternate" href="/atom.xml" title="Ender" type="application/atom+xml" />
+  <link rel="mask-icon" href="/images/logo.svg?v=6.3.0" color="#222">
 
 
 
 
 
 
-<meta name="description" content="lalalalala">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Ender">
-<meta property="og:url" content="https://y_m.coding.me/page/2/index.html">
-<meta property="og:site_name" content="Ender">
-<meta property="og:description" content="lalalalala">
-<meta property="og:locale" content="zh-Hans">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Ender">
-<meta name="twitter:description" content="lalalalala">
 
 
 
@@ -139,15 +99,13 @@
   var CONFIG = {
     root: '/',
     scheme: 'Gemini',
-    version: '5.1.4',
+    version: '6.3.0',
     sidebar: {"position":"left","display":"hide","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
-    fancybox: true,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -159,12 +117,38 @@
 </script>
 
 
+  
+
+
+
+
+  <meta name="description" content="您强归您强, 我绝不示弱.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ender">
+<meta property="og:url" content="https://y_m.coding.me/page/2/index.html">
+<meta property="og:site_name" content="Ender">
+<meta property="og:description" content="您强归您强, 我绝不示弱.">
+<meta property="og:locale" content="zh-CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Ender">
+<meta name="twitter:description" content="您强归您强, 我绝不示弱.">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Ender" type="application/atom+xml" />
+
+
+
 
   <link rel="canonical" href="https://y_m.coding.me/page/2/"/>
 
 
 
-
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
 
   <title>Ender</title>
   
@@ -176,9 +160,37 @@
 
 
 
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
   
@@ -195,19 +207,21 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">Ender</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
+    
       
-        <h1 class="site-subtitle" itemprop="description">Use the code to terminate the world.</h1>
+        <p class="site-subtitle">Use the code to terminate the world.</p>
       
+    
   </div>
 
   <div class="site-nav-toggle">
-    <button>
+    <button aria-label="切换导航栏">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -215,35 +229,34 @@
   </div>
 </div>
 
-<nav class="site-nav">
-  
 
+
+<nav class="site-nav">
   
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            关于
-          </a>
-        </li>
-      
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
+  </li>
 
       
+      
     </ul>
+  
+
   
 
   
@@ -251,12 +264,23 @@
 
 
 
- </div>
+  
+
+
+
+</div>
     </header>
+
+    
+
 
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
+            
+
+          
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
@@ -269,6 +293,8 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
@@ -278,7 +304,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="筱影志">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="您强归您强, 我绝不示弱.">
       <meta itemprop="image" content="/images/head.jpg">
     </span>
 
@@ -291,27 +317,54 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">
+          <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2016/1005/energy/" itemprop="url">能量项链</a></h2>
+                <a class="post-title-link" href="/2016/1005/energy/" itemprop="url">
+                  能量项链
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
-                <i class="fa fa-plus-square"></i>
+                <i class="fa fa-plus"></i>
               </span>
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-10-05T13:04:15+08:00">
-                2016-10-05
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2016-10-05 13:04:15" itemprop="dateCreated datePublished" datetime="2016-10-05T13:04:15+08:00">2016-10-05</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-edit"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-07-09 20:12:40" itemprop="dateModified" datetime="2018-07-09T20:12:40+08:00">2018-07-09</time>
+              
             
           </span>
 
@@ -327,11 +380,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/daily/" itemprop="url" rel="index">
-                    <span itemprop="name">daily</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/daily/" itemprop="url" rel="index"><span itemprop="name">daily</span></a></span>
 
                 
                 
@@ -347,10 +396,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2016/1005/energy/#comments" itemprop="discussionUrl">
-                  
-                    <span class="post-meta-item-text">评论数&#58;</span>
-                  
-                  <span class="post-comments-count valine-comment-count" data-xid="/2016/1005/energy/" itemprop="commentCount"></span>
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2016/1005/energy/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -364,7 +410,7 @@
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
+                 <span class="post-meta-item-text">阅读次数：</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
@@ -372,37 +418,6 @@
 
           
 
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  830
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  4
-                </span>
-              
-            </div>
           
 
           
@@ -439,6 +454,9 @@
         
       
     </div>
+
+    
+
     
     
     
@@ -477,6 +495,8 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
@@ -486,7 +506,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="筱影志">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="您强归您强, 我绝不示弱.">
       <meta itemprop="image" content="/images/head.jpg">
     </span>
 
@@ -499,27 +519,54 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">
+          <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2016/1005/stones/" itemprop="url">石子合并</a></h2>
+                <a class="post-title-link" href="/2016/1005/stones/" itemprop="url">
+                  石子合并
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
-                <i class="fa fa-plus-square"></i>
+                <i class="fa fa-plus"></i>
               </span>
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-10-05T12:59:29+08:00">
-                2016-10-05
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2016-10-05 12:59:29" itemprop="dateCreated datePublished" datetime="2016-10-05T12:59:29+08:00">2016-10-05</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-edit"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-07-09 20:12:40" itemprop="dateModified" datetime="2018-07-09T20:12:40+08:00">2018-07-09</time>
+              
             
           </span>
 
@@ -535,11 +582,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/daily/" itemprop="url" rel="index">
-                    <span itemprop="name">daily</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/daily/" itemprop="url" rel="index"><span itemprop="name">daily</span></a></span>
 
                 
                 
@@ -555,10 +598,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2016/1005/stones/#comments" itemprop="discussionUrl">
-                  
-                    <span class="post-meta-item-text">评论数&#58;</span>
-                  
-                  <span class="post-comments-count valine-comment-count" data-xid="/2016/1005/stones/" itemprop="commentCount"></span>
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2016/1005/stones/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -572,7 +612,7 @@
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
+                 <span class="post-meta-item-text">阅读次数：</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
@@ -580,37 +620,6 @@
 
           
 
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  376
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  2
-                </span>
-              
-            </div>
           
 
           
@@ -647,6 +656,9 @@
         
       
     </div>
+
+    
+
     
     
     
@@ -685,6 +697,8 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
@@ -694,7 +708,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="筱影志">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="您强归您强, 我绝不示弱.">
       <meta itemprop="image" content="/images/head.jpg">
     </span>
 
@@ -707,27 +721,54 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">
+          <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2016/1005/dist/" itemprop="url">编辑距离</a></h2>
+                <a class="post-title-link" href="/2016/1005/dist/" itemprop="url">
+                  编辑距离
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
-                <i class="fa fa-plus-square"></i>
+                <i class="fa fa-plus"></i>
               </span>
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-10-05T12:56:43+08:00">
-                2016-10-05
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2016-10-05 12:56:43" itemprop="dateCreated datePublished" datetime="2016-10-05T12:56:43+08:00">2016-10-05</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-edit"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-07-09 20:12:40" itemprop="dateModified" datetime="2018-07-09T20:12:40+08:00">2018-07-09</time>
+              
             
           </span>
 
@@ -743,11 +784,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/daily/" itemprop="url" rel="index">
-                    <span itemprop="name">daily</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/daily/" itemprop="url" rel="index"><span itemprop="name">daily</span></a></span>
 
                 
                 
@@ -763,10 +800,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2016/1005/dist/#comments" itemprop="discussionUrl">
-                  
-                    <span class="post-meta-item-text">评论数&#58;</span>
-                  
-                  <span class="post-comments-count valine-comment-count" data-xid="/2016/1005/dist/" itemprop="commentCount"></span>
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2016/1005/dist/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -780,7 +814,7 @@
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
+                 <span class="post-meta-item-text">阅读次数：</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
@@ -788,37 +822,6 @@
 
           
 
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  325
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  2
-                </span>
-              
-            </div>
           
 
           
@@ -855,6 +858,9 @@
         
       
     </div>
+
+    
+
     
     
     
@@ -893,6 +899,8 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
@@ -902,7 +910,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="筱影志">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="您强归您强, 我绝不示弱.">
       <meta itemprop="image" content="/images/head.jpg">
     </span>
 
@@ -915,27 +923,54 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">
+          <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2016/1005/fibs/" itemprop="url">Fib之奇偶性</a></h2>
+                <a class="post-title-link" href="/2016/1005/fibs/" itemprop="url">
+                  Fib之奇偶性
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
-                <i class="fa fa-plus-square"></i>
+                <i class="fa fa-plus"></i>
               </span>
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-10-05T12:47:19+08:00">
-                2016-10-05
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2016-10-05 12:47:19" itemprop="dateCreated datePublished" datetime="2016-10-05T12:47:19+08:00">2016-10-05</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-edit"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-07-09 20:12:40" itemprop="dateModified" datetime="2018-07-09T20:12:40+08:00">2018-07-09</time>
+              
             
           </span>
 
@@ -951,11 +986,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/daily/" itemprop="url" rel="index">
-                    <span itemprop="name">daily</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/daily/" itemprop="url" rel="index"><span itemprop="name">daily</span></a></span>
 
                 
                 
@@ -971,10 +1002,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2016/1005/fibs/#comments" itemprop="discussionUrl">
-                  
-                    <span class="post-meta-item-text">评论数&#58;</span>
-                  
-                  <span class="post-comments-count valine-comment-count" data-xid="/2016/1005/fibs/" itemprop="commentCount"></span>
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2016/1005/fibs/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -988,7 +1016,7 @@
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
+                 <span class="post-meta-item-text">阅读次数：</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
@@ -996,37 +1024,6 @@
 
           
 
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  188
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
           
 
           
@@ -1063,6 +1060,9 @@
         
       
     </div>
+
+    
+
     
     
     
@@ -1101,6 +1101,8 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
@@ -1110,7 +1112,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="筱影志">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="您强归您强, 我绝不示弱.">
       <meta itemprop="image" content="/images/head.jpg">
     </span>
 
@@ -1123,27 +1125,54 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">
+          <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2016/1004/commend/" itemprop="url">表彰</a></h2>
+                <a class="post-title-link" href="/2016/1004/commend/" itemprop="url">
+                  表彰
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
-                <i class="fa fa-plus-square"></i>
+                <i class="fa fa-plus"></i>
               </span>
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-10-04T16:13:11+08:00">
-                2016-10-04
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2016-10-04 16:13:11" itemprop="dateCreated datePublished" datetime="2016-10-04T16:13:11+08:00">2016-10-04</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-edit"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-07-09 20:12:40" itemprop="dateModified" datetime="2018-07-09T20:12:40+08:00">2018-07-09</time>
+              
             
           </span>
 
@@ -1159,11 +1188,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/daily/" itemprop="url" rel="index">
-                    <span itemprop="name">daily</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/daily/" itemprop="url" rel="index"><span itemprop="name">daily</span></a></span>
 
                 
                 
@@ -1179,10 +1204,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2016/1004/commend/#comments" itemprop="discussionUrl">
-                  
-                    <span class="post-meta-item-text">评论数&#58;</span>
-                  
-                  <span class="post-comments-count valine-comment-count" data-xid="/2016/1004/commend/" itemprop="commentCount"></span>
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2016/1004/commend/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1196,7 +1218,7 @@
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
+                 <span class="post-meta-item-text">阅读次数：</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
@@ -1204,37 +1226,6 @@
 
           
 
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  612
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  3
-                </span>
-              
-            </div>
           
 
           
@@ -1271,6 +1262,9 @@
         
       
     </div>
+
+    
+
     
     
     
@@ -1309,6 +1303,8 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
@@ -1318,7 +1314,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="筱影志">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="您强归您强, 我绝不示弱.">
       <meta itemprop="image" content="/images/head.jpg">
     </span>
 
@@ -1331,27 +1327,54 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">
+          <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2016/1004/bomb/" itemprop="url">轰炸</a></h2>
+                <a class="post-title-link" href="/2016/1004/bomb/" itemprop="url">
+                  轰炸
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
-                <i class="fa fa-plus-square"></i>
+                <i class="fa fa-plus"></i>
               </span>
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-10-04T14:49:07+08:00">
-                2016-10-04
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2016-10-04 14:49:07" itemprop="dateCreated datePublished" datetime="2016-10-04T14:49:07+08:00">2016-10-04</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-edit"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-07-09 20:12:40" itemprop="dateModified" datetime="2018-07-09T20:12:40+08:00">2018-07-09</time>
+              
             
           </span>
 
@@ -1367,11 +1390,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/daily/" itemprop="url" rel="index">
-                    <span itemprop="name">daily</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/daily/" itemprop="url" rel="index"><span itemprop="name">daily</span></a></span>
 
                 
                 
@@ -1387,10 +1406,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2016/1004/bomb/#comments" itemprop="discussionUrl">
-                  
-                    <span class="post-meta-item-text">评论数&#58;</span>
-                  
-                  <span class="post-comments-count valine-comment-count" data-xid="/2016/1004/bomb/" itemprop="commentCount"></span>
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2016/1004/bomb/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1404,7 +1420,7 @@
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
+                 <span class="post-meta-item-text">阅读次数：</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
@@ -1412,37 +1428,6 @@
 
           
 
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  434
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  2
-                </span>
-              
-            </div>
           
 
           
@@ -1479,6 +1464,9 @@
         
       
     </div>
+
+    
+
     
     
     
@@ -1517,6 +1505,8 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
@@ -1526,7 +1516,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="筱影志">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="您强归您强, 我绝不示弱.">
       <meta itemprop="image" content="/images/head.jpg">
     </span>
 
@@ -1539,27 +1529,54 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">
+          <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/graph/" itemprop="url">图论</a></h2>
+                <a class="post-title-link" href="/graph/" itemprop="url">
+                  图论
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
-                <i class="fa fa-plus-square"></i>
+                <i class="fa fa-plus"></i>
               </span>
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-10-04T11:15:19+08:00">
-                2016-10-04
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2016-10-04 11:15:19" itemprop="dateCreated datePublished" datetime="2016-10-04T11:15:19+08:00">2016-10-04</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-edit"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2017-09-09 19:15:34" itemprop="dateModified" datetime="2017-09-09T19:15:34+08:00">2017-09-09</time>
+              
             
           </span>
 
@@ -1575,11 +1592,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/algorithm/" itemprop="url" rel="index">
-                    <span itemprop="name">algorithm</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/algorithm/" itemprop="url" rel="index"><span itemprop="name">algorithm</span></a></span>
 
                 
                 
@@ -1595,10 +1608,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/graph/#comments" itemprop="discussionUrl">
-                  
-                    <span class="post-meta-item-text">评论数&#58;</span>
-                  
-                  <span class="post-comments-count valine-comment-count" data-xid="/graph/" itemprop="commentCount"></span>
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/graph/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1612,7 +1622,7 @@
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
+                 <span class="post-meta-item-text">阅读次数：</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
@@ -1620,37 +1630,6 @@
 
           
 
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  100
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
           
 
           
@@ -1680,6 +1659,9 @@
         
       
     </div>
+
+    
+
     
     
     
@@ -1718,6 +1700,8 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
@@ -1727,7 +1711,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="筱影志">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="您强归您强, 我绝不示弱.">
       <meta itemprop="image" content="/images/head.jpg">
     </span>
 
@@ -1740,27 +1724,54 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">
+          <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/quickpower/" itemprop="url">快速幂</a></h2>
+                <a class="post-title-link" href="/quickpower/" itemprop="url">
+                  快速幂
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
-                <i class="fa fa-plus-square"></i>
+                <i class="fa fa-plus"></i>
               </span>
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-10-03T21:14:00+08:00">
-                2016-10-03
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2016-10-03 21:14:00" itemprop="dateCreated datePublished" datetime="2016-10-03T21:14:00+08:00">2016-10-03</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-edit"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2017-09-09 19:15:28" itemprop="dateModified" datetime="2017-09-09T19:15:28+08:00">2017-09-09</time>
+              
             
           </span>
 
@@ -1776,11 +1787,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/algorithm/" itemprop="url" rel="index">
-                    <span itemprop="name">algorithm</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/algorithm/" itemprop="url" rel="index"><span itemprop="name">algorithm</span></a></span>
 
                 
                 
@@ -1796,10 +1803,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/quickpower/#comments" itemprop="discussionUrl">
-                  
-                    <span class="post-meta-item-text">评论数&#58;</span>
-                  
-                  <span class="post-comments-count valine-comment-count" data-xid="/quickpower/" itemprop="commentCount"></span>
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/quickpower/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1813,7 +1817,7 @@
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
+                 <span class="post-meta-item-text">阅读次数：</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
@@ -1821,37 +1825,6 @@
 
           
 
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  48
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
           
 
           
@@ -1881,6 +1854,9 @@
         
       
     </div>
+
+    
+
     
     
     
@@ -1919,6 +1895,8 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
@@ -1928,7 +1906,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="筱影志">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="您强归您强, 我绝不示弱.">
       <meta itemprop="image" content="/images/head.jpg">
     </span>
 
@@ -1941,27 +1919,54 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">
+          <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2016/1003/seq/" itemprop="url">序列</a></h2>
+                <a class="post-title-link" href="/2016/1003/seq/" itemprop="url">
+                  序列
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
-                <i class="fa fa-plus-square"></i>
+                <i class="fa fa-plus"></i>
               </span>
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-10-03T20:31:48+08:00">
-                2016-10-03
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2016-10-03 20:31:48" itemprop="dateCreated datePublished" datetime="2016-10-03T20:31:48+08:00">2016-10-03</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-edit"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-07-09 20:12:40" itemprop="dateModified" datetime="2018-07-09T20:12:40+08:00">2018-07-09</time>
+              
             
           </span>
 
@@ -1977,11 +1982,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/daily/" itemprop="url" rel="index">
-                    <span itemprop="name">daily</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/daily/" itemprop="url" rel="index"><span itemprop="name">daily</span></a></span>
 
                 
                 
@@ -1997,10 +1998,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2016/1003/seq/#comments" itemprop="discussionUrl">
-                  
-                    <span class="post-meta-item-text">评论数&#58;</span>
-                  
-                  <span class="post-comments-count valine-comment-count" data-xid="/2016/1003/seq/" itemprop="commentCount"></span>
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2016/1003/seq/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -2014,7 +2012,7 @@
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
+                 <span class="post-meta-item-text">阅读次数：</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
@@ -2022,37 +2020,6 @@
 
           
 
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  336
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  2
-                </span>
-              
-            </div>
           
 
           
@@ -2089,6 +2056,9 @@
         
       
     </div>
+
+    
+
     
     
     
@@ -2127,6 +2097,8 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
@@ -2136,7 +2108,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="筱影志">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="您强归您强, 我绝不示弱.">
       <meta itemprop="image" content="/images/head.jpg">
     </span>
 
@@ -2149,27 +2121,54 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">
+          <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2016/1003/chess/" itemprop="url">国际象棋</a></h2>
+                <a class="post-title-link" href="/2016/1003/chess/" itemprop="url">
+                  国际象棋
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
-                <i class="fa fa-plus-square"></i>
+                <i class="fa fa-plus"></i>
               </span>
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-10-03T16:10:59+08:00">
-                2016-10-03
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2016-10-03 16:10:59" itemprop="dateCreated datePublished" datetime="2016-10-03T16:10:59+08:00">2016-10-03</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-edit"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-07-09 20:12:40" itemprop="dateModified" datetime="2018-07-09T20:12:40+08:00">2018-07-09</time>
+              
             
           </span>
 
@@ -2185,11 +2184,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/daily/" itemprop="url" rel="index">
-                    <span itemprop="name">daily</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/daily/" itemprop="url" rel="index"><span itemprop="name">daily</span></a></span>
 
                 
                 
@@ -2205,10 +2200,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2016/1003/chess/#comments" itemprop="discussionUrl">
-                  
-                    <span class="post-meta-item-text">评论数&#58;</span>
-                  
-                  <span class="post-comments-count valine-comment-count" data-xid="/2016/1003/chess/" itemprop="commentCount"></span>
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2016/1003/chess/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -2222,7 +2214,7 @@
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
+                 <span class="post-meta-item-text">阅读次数：</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
@@ -2230,37 +2222,6 @@
 
           
 
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  468
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  2
-                </span>
-              
-            </div>
           
 
           
@@ -2297,6 +2258,9 @@
         
       
     </div>
+
+    
+
     
     
     
@@ -2331,15 +2295,12 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
 
           </div>
-          
-
-
           
 
         </div>
@@ -2371,45 +2332,67 @@
                 alt="筱影志" />
             
               <p class="site-author-name" itemprop="name">筱影志</p>
-              <p class="site-description motion-element" itemprop="description"></p>
+              <p class="site-description motion-element" itemprop="description">您强归您强, 我绝不示弱.</p>
           </div>
 
-          <nav class="site-state motion-element">
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives">
+                
+                    <span class="site-state-item-count">38</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
 
-            
-              <div class="site-state-item site-state-posts">
               
-                <a href="/archives">
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
               
-                  <span class="site-state-item-count">38</span>
-                  <span class="site-state-item-name">日志</span>
-                </a>
-              </div>
-            
 
-            
               
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
               
-              <div class="site-state-item site-state-categories">
-                <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
-                  <span class="site-state-item-name">分类</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/tags/index.html">
-                  <span class="site-state-item-count">6</span>
-                  <span class="site-state-item-name">标签</span>
-                </a>
-              </div>
-            
-
-          </nav>
+            </nav>
+          
 
           
             <div class="feed-link motion-element">
@@ -2422,31 +2405,27 @@
 
           
             <div class="links-of-author motion-element">
-                
-                  <span class="links-of-author-item">
-                    <a href="https://github.com/ym-yzh" target="_blank" title="GitHub">
-                      
-                        <i class="fa fa-fw fa-github"></i></a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://www.zhihu.com/people/wax_yoghurt" target="_blank" title="知乎">
-                      
-                        <i class="fa fa-fw fa-zhihu"></i></a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://plus.google.com/Yang-YZH" target="_blank" title="Google">
-                      
-                        <i class="fa fa-fw fa-google"></i></a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://stackoverflow.com/users/8389645/ender-yang" target="_blank" title="StackOverflow">
-                      
-                        <i class="fa fa-fw fa-stack-overflow"></i></a>
-                  </span>
-                
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/ym-yzh" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i></a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://www.zhihu.com/people/wax_yoghurt" target="_blank" title="知乎"><i class="fa fa-fw fa-zhihu"></i></a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://plus.google.com/Yang-YZH" target="_blank" title="Google"><i class="fa fa-fw fa-google"></i></a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://stackoverflow.com/users/8389645/ender-yang" target="_blank" title="StackOverflow"><i class="fa fa-fw fa-stack-overflow"></i></a>
+                  
+                </span>
+              
             </div>
           
 
@@ -2503,6 +2482,9 @@
           
 
           
+            
+          
+          
 
         </div>
       </section>
@@ -2528,26 +2510,21 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; 2016 – <span itemprop="copyrightYear">2018</span>
   <span class="with-love" id="animate">
     <i class="fa fa-terminal"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">筱影志</span>
 
   
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-area-chart"></i>
-    </span>
-    
-      <span class="post-meta-item-text">站点总字数&#58;</span>
-    
-    <span title="站点总字数">14.5k</span>
+
   
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 鼎力兹瓷</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
 
@@ -2555,12 +2532,13 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a></div>
+  <div class="theme-info">主题 – <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Gemini</a></div>
 
 
 
 
         
+
 
 
 
@@ -2575,7 +2553,10 @@
     
 
     
+	
+    
 
+    
   </div>
 
   
@@ -2594,7 +2575,11 @@
 
 
 
-  
+
+
+
+
+
 
 
 
@@ -2614,16 +2599,6 @@
 
   
   
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
     <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
   
 
@@ -2632,18 +2607,13 @@
     <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
   
 
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
 
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
 
 
 
@@ -2651,9 +2621,9 @@
   
 
 
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/affix.js?v=6.3.0"></script>
 
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.3.0"></script>
 
 
 
@@ -2662,21 +2632,7 @@
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
 
 
 
@@ -2684,11 +2640,7 @@
 
 
 
-
-
   
-
-
 
 
 
@@ -2698,12 +2650,14 @@
 
 
   <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+  
   <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
   
   <script type="text/javascript">
     var GUEST = ['nick','mail','link'];
     var guest = 'nick,mail,link';
-    guest = guest.split(',').filter(item=>{
+    guest = guest.split(',').filter(function (item) {
       return GUEST.indexOf(item)>-1;
     });
     new Valine({
@@ -2714,8 +2668,9 @@
         appKey: 'f4C7IgRIlURvH1zT5WhguetC',
         placeholder: 'Say something...',
         avatar:'mm',
-        guest_info:guest,
+        meta:guest,
         pageSize:'10' || 10,
+        visitor: true
     });
   </script>
 
@@ -2730,146 +2685,121 @@
   
 
   
-  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
-  <script>AV.initialize("yo4W93e46jrD0RffKIr6z7XP-gzGzoHsz", "f4C7IgRIlURvH1zT5WhguetC");</script>
+
+  
+
+  
+  
+
+  
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <style>
+    .copy-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #333;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      background-color: #eee;
+      background-image: linear-gradient(#fcfcfc, #eee);
+      border: 1px solid #d5d5d5;
+      border-radius: 3px;
+      user-select: none;
+      outline: 0;
+    }
+
+    .highlight-wrap .copy-btn {
+      transition: opacity .3s ease-in-out;
+      opacity: 0;
+      padding: 2px 6px;
+      position: absolute;
+      right: 4px;
+      top: 8px;
+    }
+
+    .highlight-wrap:hover .copy-btn,
+    .highlight-wrap .copy-btn:focus {
+      opacity: 1
+    }
+
+    .highlight-wrap {
+      position: relative;
+    }
+  </style>
   <script>
-    function showTime(Counter) {
-      var query = new AV.Query(Counter);
-      var entries = [];
-      var $visitors = $(".leancloud_visitors");
-
-      $visitors.each(function () {
-        entries.push( $(this).attr("id").trim() );
-      });
-
-      query.containedIn('url', entries);
-      query.find()
-        .done(function (results) {
-          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
-
-          if (results.length === 0) {
-            $visitors.find(COUNT_CONTAINER_REF).text(0);
-            return;
-          }
-
-          for (var i = 0; i < results.length; i++) {
-            var item = results[i];
-            var url = item.get('url');
-            var time = item.get('time');
-            var element = document.getElementById(url);
-
-            $(element).find(COUNT_CONTAINER_REF).text(time);
-          }
-          for(var i = 0; i < entries.length; i++) {
-            var url = entries[i];
-            var element = document.getElementById(url);
-            var countSpan = $(element).find(COUNT_CONTAINER_REF);
-            if( countSpan.text() == '') {
-              countSpan.text(0);
-            }
-          }
-        })
-        .fail(function (object, error) {
-          console.log("Error: " + error.code + " " + error.message);
-        });
-    }
-
-    function addCount(Counter) {
-      var $visitors = $(".leancloud_visitors");
-      var url = $visitors.attr('id').trim();
-      var title = $visitors.attr('data-flag-title').trim();
-      var query = new AV.Query(Counter);
-
-      query.equalTo("url", url);
-      query.find({
-        success: function(results) {
-          if (results.length > 0) {
-            var counter = results[0];
-            counter.fetchWhenSave(true);
-            counter.increment("time");
-            counter.save(null, {
-              success: function(counter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(counter.get('time'));
-              },
-              error: function(counter, error) {
-                console.log('Failed to save Visitor num, with error message: ' + error.message);
-              }
-            });
-          } else {
-            var newcounter = new Counter();
-            /* Set ACL */
-            var acl = new AV.ACL();
-            acl.setPublicReadAccess(true);
-            acl.setPublicWriteAccess(true);
-            newcounter.setACL(acl);
-            /* End Set ACL */
-            newcounter.set("title", title);
-            newcounter.set("url", url);
-            newcounter.set("time", 1);
-            newcounter.save(null, {
-              success: function(newcounter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
-              },
-              error: function(newcounter, error) {
-                console.log('Failed to create');
-              }
-            });
-          }
-        },
-        error: function(error) {
-          console.log('Error:' + error.code + " " + error.message);
-        }
-      });
-    }
-
-    $(function() {
-      var Counter = AV.Object.extend("Counter");
-      if ($('.leancloud_visitors').length == 1) {
-        addCount(Counter);
-      } else if ($('.post-title-link').length > 1) {
-        showTime(Counter);
-      }
-    });
+    $('.highlight').each(function (i, e) {
+      var $wrap = $('<div>').addClass('highlight-wrap')
+      $(e).after($wrap)
+      $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function (e) {
+        var code = $(this).parent().find('.code').find('.line').map(function (i, e) {
+          return $(e).text()
+        }).toArray().join('\n')
+        var ta = document.createElement('textarea')
+        document.body.appendChild(ta)
+        ta.style.position = 'absolute'
+        ta.style.top = '0px'
+        ta.style.left = '0px'
+        ta.value = code
+        ta.select()
+        ta.focus()
+        var result = document.execCommand('copy')
+        document.body.removeChild(ta)
+        
+          if(result)$(this).text('复制成功')
+          else $(this).text('复制失败')
+        
+        $(this).blur()
+      })).on('mouseleave', function (e) {
+        var $b = $(this).find('.copy-btn')
+        setTimeout(function () {
+          $b.text('复制')
+        }, 300)
+      }).append(e)
+    })
   </script>
 
-
-
-  
-
-  
-
-  
-  
-
-  
-  
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-  
-
-
-  
-
-  
 
 </body>
 </html>
