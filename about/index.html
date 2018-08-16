@@ -12,6 +12,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
 
+<script>
+	(function(){
+		if(''){
+			if (prompt('请输入文章密码','') !== ''){
+				alert('密码错误！请去问博主大大～');
+				history.back();
+			}
+		}
+	})();
+</script>
 
 
 
@@ -118,7 +128,7 @@
 <meta property="og:site_name" content="Ender">
 <meta property="og:description" content="某天, 博主突发奇想: 做一个自己的博客吧!为什么呢? 这种既好玩又能装X的事情, 何乐而不为呢?于是就有了我的博客… 『ღ( ´･ᴗ･` )笔芯』">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-31T14:00:42.000Z">
+<meta property="og:updated_time" content="2018-08-16T13:01:28.297Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="about">
 <meta name="twitter:description" content="某天, 博主突发奇想: 做一个自己的博客吧!为什么呢? 这种既好玩又能装X的事情, 何乐而不为呢?于是就有了我的博客… 『ღ( ´･ᴗ･` )笔芯』">
@@ -278,7 +288,7 @@ function run(names){
    ).replace(/\+/g,'-').replace(/\//g,'_');
    iframe.src = 'http://namerena.github.io/#n=' + base64;
 } -->
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="110" src="//music.163.com/outchain/player?type=0&id=899330065&auto=1&height=90"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&amp;id=429460399&amp;auto=1&amp;height=66" style="width: 100%; height: 100%; position: absolute; top: 0px; left: 0px;"></iframe>
 
         
       </div>
@@ -395,7 +405,7 @@ function run(names){
                   <span class="links-of-author-item">
                     <a href="https://www.zhihu.com/people/wax_yoghurt" target="_blank" title="知乎">
                       
-                        <i class="fa fa-fw fa-globe"></i></a>
+                        <i class="fa fa-fw fa-zhihu"></i></a>
                   </span>
                 
                   <span class="links-of-author-item">
@@ -492,7 +502,7 @@ function run(names){
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2018</span>
-  <span class="with-love">
+  <span class="with-love" id="animate">
     <i class="fa fa-terminal"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">筱影志</span>
@@ -510,7 +520,7 @@ function run(names){
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 鼎力兹瓷</div>
 
 
 
