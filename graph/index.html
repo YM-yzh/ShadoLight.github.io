@@ -130,7 +130,7 @@
 <meta property="og:site_name" content="Ender">
 <meta property="og:description" content="图论">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-09-09T11:15:34.000Z">
+<meta property="og:updated_time" content="2018-08-24T12:16:52.117Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="图论">
 <meta name="twitter:description" content="图论">
@@ -376,7 +376,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2017-09-09 19:15:34" itemprop="dateModified" datetime="2017-09-09T19:15:34+08:00">2017-09-09</time>
+                <time title="修改时间：2018-08-24 20:16:52" itemprop="dateModified" datetime="2018-08-24T20:16:52+08:00">2018-08-24</time>
               
             
           </span>
@@ -454,18 +454,21 @@
 <li><h2 id="存储"><a href="#存储" class="headerlink" title="存储"></a>存储</h2></li>
 <li><h3 id="邻接矩阵"><a href="#邻接矩阵" class="headerlink" title="邻接矩阵"></a>邻接矩阵</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 从u到v有一条权值为w的边</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">add</span><span class="params">(<span class="keyword">int</span> u,<span class="keyword">int</span> v,<span class="keyword">int</span> w)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    G[a][b]=c;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
-<li><h3 id="邻接表"><a href="#邻接表" class="headerlink" title="邻接表"></a>邻接表</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 从u到v有一条权值为w的边</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">add</span><span class="params">(<span class="keyword">int</span> u,<span class="keyword">int</span> v,<span class="keyword">int</span> w)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    tnt++;</span><br><span class="line">    weight[tnt]=a;</span><br><span class="line">    edge[tnt]=j;</span><br><span class="line">    next[tnt]=head[i];</span><br><span class="line">    head[i]=tnt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<li><h3 id="邻接表"><a href="#邻接表" class="headerlink" title="邻接表"></a>邻接表</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 从u到v有一条权值为w的边</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">add</span><span class="params">(<span class="keyword">int</span> u,<span class="keyword">int</span> v,<span class="keyword">int</span> w)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    tnt++;</span><br><span class="line">    next[tnt]=first[u];</span><br><span class="line">    first[u]=tnt;</span><br><span class="line">    weight[tnt]=a;</span><br><span class="line">    end[tnt]=j;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
-<li><h2 id="遍历"><a href="#遍历" class="headerlink" title="遍历"></a>遍历</h2><p>&lt;!–</p>
-</li>
+<li><h2 id="遍历"><a href="#遍历" class="headerlink" title="遍历"></a>遍历</h2></li>
 <li><h3 id="深度优先"><a href="#深度优先" class="headerlink" title="深度优先"></a>深度优先</h3></li>
 </ul>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">DFS</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<ul>
-<li><h3 id="广度优先"><a href="#广度优先" class="headerlink" title="广度优先"></a>广度优先</h3></li>
-</ul>
-<p><code>`</code>c++<br>void BFS()<br>{</p>
-<p>}<br><code>`</code> –&gt;</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">DFS</span><span class="params">(<span class="keyword">int</span> u)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(vis[u])</span><br><span class="line">        <span class="keyword">return</span> ;</span><br><span class="line">    vis[u]=<span class="literal">true</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> e=first[u];e;e=next[e])</span><br><span class="line">        DFS(end[e]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<!--
+- ### 广度优先
+
+```c++
+void BFS()
+{
+
+}
+``` -->
 
       
     </div>
@@ -646,7 +649,7 @@
                     
                       
                     
-                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -759,7 +762,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#图论"><span class="nav-number">1.</span> <span class="nav-text">图论</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#存储"><span class="nav-number">1.1.</span> <span class="nav-text">存储</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#邻接矩阵"><span class="nav-number">1.1.1.</span> <span class="nav-text">邻接矩阵</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#邻接表"><span class="nav-number">1.1.2.</span> <span class="nav-text">邻接表</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#遍历"><span class="nav-number">1.2.</span> <span class="nav-text">遍历</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#深度优先"><span class="nav-number">1.2.1.</span> <span class="nav-text">深度优先</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#广度优先"><span class="nav-number">1.2.2.</span> <span class="nav-text">广度优先</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#图论"><span class="nav-number">1.</span> <span class="nav-text">图论</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#存储"><span class="nav-number">1.1.</span> <span class="nav-text">存储</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#邻接矩阵"><span class="nav-number">1.1.1.</span> <span class="nav-text">邻接矩阵</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#邻接表"><span class="nav-number">1.1.2.</span> <span class="nav-text">邻接表</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#遍历"><span class="nav-number">1.2.</span> <span class="nav-text">遍历</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#深度优先"><span class="nav-number">1.2.1.</span> <span class="nav-text">深度优先</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
